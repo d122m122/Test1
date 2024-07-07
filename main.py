@@ -7,12 +7,12 @@ def nums(lst):
             lst_musbat.append(x)
         elif x < 0:
             lst_manfiy.append(x)
-    if lst_musbat > lst_manfiy:
+    if len(lst_musbat) >= len(lst_manfiy):
         return len(lst_musbat)
-    elif lst_manfiy > lst_musbat:
+    elif len(lst_manfiy) >= len(lst_musbat):
         return len(lst_manfiy)
 
-print(nums([-3,-2,-1,1,2,3]))
+print(nums([-3,-2,-1,1,2,3,4]))
 print(nums([-3,-2,-1,0,0,2,3]))
 print(nums([5,26,130,1325]))
 
