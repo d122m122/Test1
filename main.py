@@ -4,13 +4,13 @@ def nums(lst):
     lst_manfiy = []
     for x in lst:
         if x > 0:
-            kop.append(x)
+            lst_musbat.append(x)
         elif x < 0:
-            hop.append(x)
-    if kop > hop:
-        return len(kop)
-    elif hop > kop:
-        return len(hop)
+            lst_manfiy.append(x)
+    if lst_musbat > lst_manfiy:
+        return len(lst_musbat)
+    elif lst_manfiy > lst_musbat:
+        return len(lst_manfiy)
 
 print(nums([-3,-2,-1,1,2,3]))
 print(nums([-3,-2,-1,0,0,2,3]))
